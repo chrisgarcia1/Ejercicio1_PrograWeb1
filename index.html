@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="base" class="form-label">Base</label>
+                <input type="number" class="form-control" id="b">
+            </div>
+
+            <div class="mb-3 col-6">
+                <label for="altura" class="form-label">Altura</label>
+                <input type="number" class="form-control" id="h">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="area" class="form-label">Area del rectangulo</label>
+                <input type="number" class="form-control" id="a" readonly>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="mb-3 col-3">
+                <button type="button" onclick="calcular()" class="btn btn-success">Calcular</button>
+                <button type="button" onclick="borrar()" class="btn btn-danger">Limpiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

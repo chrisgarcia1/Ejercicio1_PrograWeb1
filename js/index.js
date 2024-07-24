@@ -1,8 +1,20 @@
 function calcular(){
-    let base= parseFloat(document.getElementById("b").value)
-    let height= parseFloat(document.getElementById("h").value)
+    let strbase= document.getElementById("b").value
+    let strheight= document.getElementById("h").value
 
-    if (height <=0 || base <= 0){
+    if(strbase==="" && strheight===""){
+        alert("base y altura en blanco")
+    }
+    else if(strheight===""){
+        alert("altura en blanco")
+    }
+    else if (strbase===""){
+        alert("base en blanco")
+    }
+    else{
+        let base=parseFloat(strbase)
+        let height=parseFloat(strheight)
+        if (height <=0 || base <= 0){
         if (base<=0 && height<=0){
             alert("Base y altura no validos")
         } else {
@@ -13,9 +25,10 @@ function calcular(){
                 alert("Base no valida")
             }
         }
-    }else{
-        let area= base*height
-        document.getElementById("a").value= area
+        }else{
+            let area= base*height
+            document.getElementById("a").value= area
+    }
     }
 }
 
